@@ -310,7 +310,7 @@
             //                    | GUI | LWR | SPC | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &none  &none  &mt LEFT_GUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G  &kp H  &mt RSHFT J  &mt RCTRL K  &mt RALT L  &kp SEMI  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none  &kp TAB  &lt 1 DELETE  &lt 3 SPACE  &kp RET  &lt 2 BACKSPACE  &kp RGUI
+&none  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &none  &none  &mt LEFT_GUI A  &mt LALT S  &mt LCTRL D  &mt LSHFT F  &kp G  &kp H  &mt RSHFT J  &mt RCTRL K  &mt RALT L  &kp SEMI  &none  &none  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &none  &kp TAB  &lt 1 DELETE  &lt 3 SPACE  &lt 4 ENTER  &lt 2 BACKSPACE  &kp RGUI
             >;
         };
 
@@ -352,35 +352,7 @@
             //                    | GUI |     | SPC   | ENT |     | ALT |
 
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &none  &none  &kp GRAVE  &none  &kp KP_NUM  &none  &none  &kp LEFT_BRACKET  &none  &none  &bt BT_SEL 0  &kp MINUS  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &kp PRINTSCREEN  &none  &kp SEMI  &kp SINGLE_QUOTE  &none  &none  &bt BT_CLR  &rgb_ug RGB_TOG  &sys_reset  &bootloader  &studio_unlock  &trans  &kp RIGHT_BRACKET  &trans  &trans  &trans  &none  &kp LGUI  &trans  &kp SPACE  &kp LGUI  &trans  &kp SPACE
-            >;
-        };
-
-        extra_layer_3 {
-            display-name = "EXTRA 3";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_4 {
-            display-name = "EXTRA 4";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_5 {
-            display-name = "EXTRA 5";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        extra_layer_6 {
-            display-name = "EXTRA 6";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &none  &none  &kp GRAVE  &none  &kp KP_NUM  &none  &none  &kp LEFT_BRACKET  &none  &none  &bt BT_SEL 0  &kp MINUS  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &kp PRINTSCREEN  &none  &kp SEMI  &kp SINGLE_QUOTE  &none  &none  &bt BT_CLR  &rgb_ug RGB_TOG  &sys_reset  &bootloader  &studio_unlock  &trans  &kp RIGHT_BRACKET  &trans  &trans  &trans  &none  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
