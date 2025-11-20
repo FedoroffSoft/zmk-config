@@ -317,7 +317,7 @@
             bindings = <
                 &none  &kp EXCL     &sym_at     &sym_hash   &sym_dollar &kp PRCNT           &sym_qm         &kp HOME        &kp UP_ARROW    &kp END             &none       &none  
                 &none  &trans       &trans      &trans      &trans      &kp EQUAL           &sym_colon      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp BSPC    &none  
-                &none  &kp TILDE    &sym_ga     &sym_apos   &sym_quote  &sym_amp            &sym_semicolon  &none           &kp K_MENU      &none               &kp DELETE  &none  
+                &none  &kp TILDE    &sym_ga     &sym_apos   &sym_quote  &sym_amp            &sym_semicolon  &none           &kp K_CMENU     &none               &kp DELETE  &none  
                                                 &trans      &trans      &trans              &trans          &trans          &trans                                       
             >;
         };
