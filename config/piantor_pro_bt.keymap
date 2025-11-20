@@ -260,42 +260,42 @@
 
         cmb_left_parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <22 23>;
+            key-positions = <28 27>;
         };
 
         cmb_right_parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <26 27>;
+            key-positions = <31 32>;
         };
 
         cmb_left_brace {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <2 3>;
+            key-positions = <4 3>;
         };
 
         cmb_right_brace {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
         };
 
         cmb_less_than {
             bindings = <&kp LESS_THAN>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
         };
 
         cmb_greater_than {
             bindings = <&kp GREATER_THAN>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
         };
 
         cmb_comma {
             bindings = <&sym_comma>;
-            key-positions = <21 22>;
+            key-positions = <26 27>;
         };
 
         cmb_point {
             bindings = <&sym_point>;
-            key-positions = <27 28>;
+            key-positions = <33 32>;
         };
     };
 
@@ -315,9 +315,9 @@
         navigation_layer {
             display-name = "NAVIGATION";
             bindings = <
-                &none  &kp EXCL     &sym_at     &sym_hash   &sym_dollar &kp PRCNT           &sym_qm         &kp HOME        &kp UP_ARROW    &kp END             &none  &none  
-                &none  &trans       &trans      &trans      &trans      &kp EQUAL           &sym_colon      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &none  &none  
-                &none  &kp TILDE    &sym_ga     &sym_apos   &sym_quote  &sym_amp            &sym_semicolon  &none           &kp K_MENU      &none               &none  &none  
+                &none  &kp EXCL     &sym_at     &sym_hash   &sym_dollar &kp PRCNT           &sym_qm         &kp HOME        &kp UP_ARROW    &kp END             &none    &none  
+                &none  &trans       &trans      &trans      &trans      &kp EQUAL           &sym_colon      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &BSPC    &none  
+                &none  &kp TILDE    &sym_ga     &sym_apos   &sym_quote  &sym_amp            &sym_semicolon  &none           &kp K_MENU      &none               &DELETE  &none  
                                                 &trans      &trans      &trans              &trans          &trans          &trans                                       
             >;
         };
