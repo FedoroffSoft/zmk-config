@@ -360,7 +360,7 @@
             bindings = <
                 &trans &kp TAB    &kp Q    &kp W      &kp E       &kp R         &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &trans
                 &trans &kp LSHFT  &kp A    &kp S      &kp D       &kp F         &kp Y     &kp H     &kp J     &kp K     &kp L     &trans
-                &trans &kp B      &kp Z    &kp X      &kp C       &kp V         &kp N     &kp U     &kp I     &kp O     &tog 0    &trans
+                &trans &kp B      &kp Z    &kp X      &kp C       &kp V         &kp N     &kp U     &kp I     &kp O     &tog 5    &trans
                                            &kp RCTRL  &kp LCTRL   &kp SPACE     &trans &trans &trans       
             >;
         };
