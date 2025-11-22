@@ -350,18 +350,18 @@
             bindings = <
                 &none  &bt BT_SEL 0     &bt BT_SEL 1        &none           &none           &kp GRAVE               &rgb_ug RGB_BRI     &kp KP_NUM          &none   &none       &kp LEFT_BRACKET    &none  
                 &none  &bt BT_SEL 0     &kp MINUS           &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4            &rgb_ug RGB_BRD     &kp PRINTSCREEN     &none   &kp SEMI    &kp SINGLE_QUOTE    &none  
-                &none  &bt BT_CLR       &rgb_ug RGB_TOG     &sys_reset      &bootloader     &studio_unlock          &rgb_ug RGB_EFF     &kp RIGHT_BRACKET   &trans  &trans      &trans              &none  
+                &none  &bt BT_CLR       &rgb_ug RGB_TOG     &sys_reset      &bootloader     &studio_unlock          &rgb_ug RGB_EFF     &kp RIGHT_BRACKET   &trans  &trans      &tog 5              &none  
                                                             &trans          &trans          &trans                  &trans              &trans              &trans       
             >;
         };
 
-        extra_layer_5 {
-            display-name = "EXTRA 5";
+        game_layer {
+            display-name = "GAME";
             bindings = <
-                &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
-                                     &trans &trans &trans  &trans &trans &trans       
+                &trans &kp TAB    &kp Q    &kp W      &kp E       &kp R         &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &trans
+                &trans &kp LSHFT  &kp A    &kp S      &kp D       &kp F         &kp Y     &kp H     &kp J     &kp K     &kp L     &trans
+                &trans &kp B      &kp Z    &kp X      &kp C       &kp V         &kp N     &kp U     &kp I     &kp O     &tog 0    &trans
+                                           &kp RCTRL  &kp LCTRL   &kp SPACE     &trans &trans &trans       
             >;
         };
 
