@@ -331,7 +331,7 @@
                 &none   &trans  &lang_en        &lang_de    &lang_ru    &trans                  &kp KP_PLUS     &kp N1  &kp N2  &kp N3  &kp KP_EQUAL        &none   
                 &none   &trans  &kp BACKSLASH   &sym_pipe   &kp SLASH   &kp UNDER               &kp KP_MINUS    &kp N4  &kp N5  &kp N6  &kp KP_ASTERISK     &none   
                 &none   &trans  &trans          &trans      &trans      &trans                  &kp KP_SLASH    &kp N7  &kp N8  &kp N9  &kp N0              &none   
-                                                &trans      &trans      &trans                  &trans          &trans  &trans
+                                                &trans      &kp UNDER   &kp KP_MINUS            &trans          &trans  &trans
             >;
         };
 
