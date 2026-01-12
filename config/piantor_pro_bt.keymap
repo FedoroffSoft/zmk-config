@@ -257,7 +257,7 @@
             label = "SYM_POINT";
         };
 
-        sym_point: sym_rclick {
+        sym_rclick: sym_rclick {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
