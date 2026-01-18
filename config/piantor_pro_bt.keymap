@@ -317,9 +317,9 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-                &none  &kp Q            &kp W       &kp E           &kp R                   &kp T           &kp Y               &kp U         &kp I       &kp O       &mt RIGHT_GUI P     &none  
-                &none  &mt LSHFT A      &mt LALT S  &mt LCTRL D     &mt LSHFT F             &kp G           &kp H               &mt RSHFT J   &mt RCTRL K &mt RALT L  &mt RSHFT SEMI      &none  
-                &none  &mt LCTRL Z      &kp X       &kp C           &kp V                   &kp B           &kp N               &kp M         &kp COMMA   &kp DOT     &mt RCTRL SLASH     &none  
+                &none  &kp Q            &kp W       &kp E           &kp R                   &kp T           &kp Y               &kp U         &kp I       &kp O       &mt RIGHT_GUI P       &none  
+                &none  &mt LEFT_GUI A   &mt LALT S  &mt LCTRL D     &mt LSHFT F             &kp G           &kp H               &mt RSHFT J   &mt RCTRL K &mt RALT L  &mt RIGHT_GUI SEMI    &none  
+                &none  &kp Z            &kp X       &kp C           &kp V                   &kp B           &kp N               &kp M         &kp COMMA   &kp DOT     &kp SLASH             &none  
                                         &kp TAB     &lt 1 SPACE     &lt 3 K_CMENU           &lt 4 DELETE    &lt 2 BSPC          &kp ENTER               
             >;
         };
@@ -329,7 +329,7 @@
             bindings = <
                 &none  &kp EXCL     &sym_at     &sym_hash   &sym_dollar &kp PRCNT           &sym_qm         &kp HOME        &kp UP_ARROW    &kp END             &kp DELETE      &none  
                 &none  &trans       &trans      &trans      &trans      &kp TILDE           &kp EQUAL       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &sym_semicolon  &none  
-                &none  &trans       &sym_ga     &sym_apos   &sym_quote  &sym_amp            &sym_colon      &none           &kp K_CMENU     &sym_qm             &sym_colon      &none  
+                &none  &trans       &sym_ga     &sym_apos   &sym_quote  &sym_amp            &sym_colon      &none           &kp DOWN_ARROW  &sym_qm             &sym_colon      &none  
                                                 &trans      &trans      &trans              &sym_comma      &sym_point      &sym_qm                                    
             >;
         };
