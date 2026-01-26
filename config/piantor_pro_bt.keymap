@@ -265,48 +265,152 @@
 
             label = "SYM_RCLICK";
         };
+
+        sym_left_square_bracket: sym_left_square_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LALT>;
+            label = "SYM_L_S_B";
+        };
+
+        sym_right_square_bracket: sym_right_square_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LALT>;
+            label = "SYM_R_S_B";
+        };
+
+        sym_left_curve_bracket: sym_left_curve_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LALT>;
+            label = "SYM_L_C_B";
+        };
+
+        sym_right_curve_bracket: sym_right_curve_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LALT>;
+            label = "SYM_R_C_B";
+        };
+
+        sym_left_round_bracket: sym_left_round_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_4 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LALT>;
+            label = "SYM_L_R_B";
+        };
+
+        sym_right_round_bracket: sym_right_round_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_4 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LALT>;
+            label = "SYM_R_R_B";
+        };
+
+        sym_left_angle_bracket: sym_left_angle_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_6 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LALT>;
+            label = "SYM_L_A_B";
+        };
+
+        sym_right_angle_bracket: sym_right_angle_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_6 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LALT>;
+            label = "SYM_R_A_B";
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
         cmb_left_parenthesis {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&sym_left_round_bracket>;
             key-positions = <28 27>;
         };
 
         cmb_right_parenthesis {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&sym_right_round_bracket>;
             key-positions = <31 32>;
         };
 
         cmb_left_brace {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&sym_left_square_bracket>;
             key-positions = <4 3>;
         };
 
         cmb_right_brace {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&sym_right_square_bracket>;
             key-positions = <7 8>;
         };
 
         cmb_less_than {
-            bindings = <&kp LESS_THAN>;
+            bindings = <&sym_left_curve_bracket>;
             key-positions = <2 3>;
         };
 
         cmb_greater_than {
-            bindings = <&kp GREATER_THAN>;
+            bindings = <&sym_right_curve_bracket>;
             key-positions = <8 9>;
         };
 
         cmb_comma {
-            bindings = <&sym_comma>;
+            bindings = <&sym_left_angle_bracket>;
             key-positions = <26 27>;
         };
 
         cmb_point {
-            bindings = <&sym_point>;
+            bindings = <&sym_right_angle_bracket>;
             key-positions = <33 32>;
         };
     };
