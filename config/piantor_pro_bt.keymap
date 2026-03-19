@@ -373,14 +373,12 @@
         shift_enter: shift_enter {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp ENTER>,
-                <&macro_release>,
-                <&kp LSHFT>;
-
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp ENTER>
+                , <&macro_release &kp LSHFT>
+                ;
+    
             label = "SHIFT_ENTER";
         };
     };
@@ -429,6 +427,17 @@
         };
     };
 
+    behaviors {
+        se_paste: shift_enter_paste {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&shift_enter>, <&kp>;
+            display-name = "ShiftEnter/Paste";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -438,7 +447,7 @@
                 &none  &kp Q            &kp W                 &kp E           &kp R                   &kp T           &kp Y               &kp U         &kp I       &kp O       &mt RIGHT_GUI P       &none  
                 &none  &mt LEFT_GUI A   &mt LALT S            &mt LCTRL D     &mt LSHFT F             &kp G           &kp H               &mt RSHFT J   &mt RCTRL K &mt RALT L  &mt ENTER SEMI        &none  
                 &none  &kp Z            &kp X                 &kp C           &kp V                   &kp B           &kp N               &kp M         &kp COMMA   &kp DOT     &kp SLASH             &none  
-                                        &mt K_CMENU LC(C)     &lt 1 SPACE     &lt 3 TAB               &lt 4 DELETE    &lt 2 BSPC          &mt shift_enter LC(V)          
+                                        &mt K_CMENU LC(C)     &lt 1 SPACE     &lt 3 TAB               &lt 4 DELETE    &lt 2 BSPC          &se_paste 0 LC(V)          
             >;
         };
 
