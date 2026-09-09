@@ -381,6 +381,34 @@
     
             label = "SHIFT_ENTER";
         };
+
+        sym_slash: sym_slash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_4 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "SYM_SLASH";
+        };
+
+        sym_backslash: sym_backslash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_9 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "SYM_BACKSLASH";
+        };
     };
 
     combos {
@@ -456,18 +484,18 @@
             bindings = <
                 &none  &kp EXCL     &sym_at     &sym_hash   &sym_dollar &kp PRCNT           &sym_qm         &kp HOME        &kp UP_ARROW    &kp END             &sym_semicolon     &none  
                 &none  &trans       &trans      &trans      &trans      &kp TILDE           &kp EQUAL       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &sym_colon         &none  
-                &none  &trans       &sym_ga     &sym_apos   &sym_quote  &sym_amp            &sym_colon      &kp PAGE_UP     &kp DOWN_ARROW  &kp PAGE_DOWN       &none              &none  
-                                                &trans      &trans      &trans              &sym_qm         &sym_point      &sym_comma      
+                &none  &trans       &sym_ga     &sym_apos   &sym_quote  &sym_amp            &sym_colon      &kp PAGE_UP     &kp DOWN_ARROW  &kp PAGE_DOWN       &kp KP_ASTERISK    &none  
+                                                &trans      &trans      &trans              &sym_comma      &sym_point      &sym_qm      
             >;
         };
 
         num_pad_layer {
             display-name = "NUMPAD";
             bindings = <
-                &none   &trans  &lang_en        &lang_de    &lang_ru    &trans                  &kp KP_PLUS     &kp N1  &kp N2  &kp N3  &kp KP_EQUAL        &none   
-                &none   &trans  &kp BACKSLASH   &sym_pipe   &kp SLASH   &kp UNDER               &kp KP_MINUS    &kp N4  &kp N5  &kp N6  &kp KP_ASTERISK     &none   
-                &none   &trans  &trans          &trans      &trans      &trans                  &kp KP_SLASH    &kp N7  &kp N8  &kp N9  &kp N0              &none   
-                                                &kp EQUAL   &kp UNDER   &kp KP_MINUS            &trans          &trans  &trans
+                &none   &trans  &lang_en        &lang_de    &lang_ru          &trans                  &kp KP_PLUS     &kp N1  &kp N2  &kp N3  &kp KP_EQUAL        &none   
+                &none   &trans  &sym_ga         &sym_apos   &sym_quote        &kp UNDER               &kp KP_MINUS    &kp N4  &kp N5  &kp N6  &kp KP_ASTERISK     &none   
+                &none   &trans  &sym_slash      &sym_pipe   &sym_backslash    &trans                  &kp KP_SLASH    &kp N7  &kp N8  &kp N9  &kp N0              &none   
+                                                &kp EQUAL   &kp UNDER         &kp KP_MINUS            &trans          &trans  &trans
             >;
         };
 
