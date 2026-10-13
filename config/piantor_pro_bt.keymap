@@ -370,7 +370,7 @@
         navigation_layer {
             display-name = "NAVIGATION";
             bindings = <
-                &none  &kp EXCL     &kp AT      &kp HASH    &kl DOLLAR  &kp PRCNT           &kp QUESTION    &kp HOME        &kp UP_ARROW    &kp END             &sym_semicolon     &none  
+                &none  &kp EXCL     &kp AT      &kp HASH    &kp DOLLAR  &kp PRCNT           &kp QUESTION    &kp HOME        &kp UP_ARROW    &kp END             &sym_semicolon     &none  
                 &none  &trans       &trans      &trans      &trans      &kp TILDE           &kp EQUAL       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp COLON          &none  
                 &none  &kp CARET    &sym_ga     &sym_apos   &kp DQT     &kp AMPERSAND       &kp COLON       &kp PAGE_UP     &kp DOWN_ARROW  &kp PAGE_DOWN       &kp KP_ASTERISK    &none  
                                                 &trans      &trans      &trans              &sym_comma      &sym_point      &kp QUESTION
