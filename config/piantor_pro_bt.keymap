@@ -75,48 +75,6 @@
             label = "LANG_RU";
         };
 
-        sym_at: sym_at {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_6 &kp KP_NUMBER_4>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "SYM_AT";
-        };
-
-        sym_hash: sym_hash {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_3 &kp KP_NUMBER_5>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "SYM_HASH";
-        };
-
-        sym_dollar: sym_dollar {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_3 &kp KP_NUMBER_6>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "SYM_DOLLAR";
-        };
-
         sym_ga: sym_apostrophe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -129,62 +87,6 @@
                 <&kp LALT>;
 
             label = "SYM_APOSTROPHE";
-        };
-
-        sym_quote: sym_quote {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_3 &kp KP_NUMBER_4>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "SYM_QUOTE";
-        };
-
-        sym_amp: sym_amp {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_3 &kp KP_NUMBER_8>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "SYM_AMP";
-        };
-
-        sym_qm: sym_qm {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_6 &kp KP_NUMBER_3>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "SYM_QM";
-        };
-
-        sym_colon: sym_colon {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_5 &kp KP_NUMBER_8>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "SYM_COLON";
         };
 
         sym_semicolon: sym_semicolon {
@@ -213,20 +115,6 @@
                 <&kp LALT>;
 
             label = "SYM_APOS";
-        };
-
-        sym_pipe: sym_pipe {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_4>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "SYM_PIPE";
         };
 
         sym_comma: sym_comma {
@@ -482,10 +370,10 @@
         navigation_layer {
             display-name = "NAVIGATION";
             bindings = <
-                &none  &kp EXCL     &sym_at     &sym_hash   &sym_dollar &kp PRCNT           &sym_qm         &kp HOME        &kp UP_ARROW    &kp END             &sym_semicolon     &none  
-                &none  &trans       &trans      &trans      &trans      &kp TILDE           &kp EQUAL       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &sym_colon         &none  
-                &none  &trans       &sym_ga     &sym_apos   &sym_quote  &sym_amp            &sym_colon      &kp PAGE_UP     &kp DOWN_ARROW  &kp PAGE_DOWN       &kp KP_ASTERISK    &none  
-                                                &trans      &trans      &trans              &sym_comma      &sym_point      &sym_qm      
+                &none  &kp EXCL     &kp AT      &kp HASH    &kl DOLLAR  &kp PRCNT           &kp QUESTION    &kp HOME        &kp UP_ARROW    &kp END             &sym_semicolon     &none  
+                &none  &trans       &trans      &trans      &trans      &kp TILDE           &kp EQUAL       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp COLON          &none  
+                &none  &kp CARET    &sym_ga     &sym_apos   &kp DQT     &kp AMPERSAND       &kp COLON       &kp PAGE_UP     &kp DOWN_ARROW  &kp PAGE_DOWN       &kp KP_ASTERISK    &none  
+                                                &trans      &trans      &trans              &sym_comma      &sym_point      &kp QUESTION
             >;
         };
 
@@ -493,8 +381,8 @@
             display-name = "NUMPAD";
             bindings = <
                 &none   &trans  &lang_en        &lang_de    &lang_ru          &trans                  &kp KP_PLUS     &kp N1  &kp N2  &kp N3  &kp KP_EQUAL        &none   
-                &none   &trans  &sym_ga         &sym_apos   &sym_quote        &kp UNDER               &kp KP_MINUS    &kp N4  &kp N5  &kp N6  &kp KP_ASTERISK     &none   
-                &none   &trans  &sym_slash      &sym_pipe   &sym_backslash    &trans                  &kp KP_SLASH    &kp N7  &kp N8  &kp N9  &kp N0              &none   
+                &none   &trans  &sym_slash      &kp PIPE    &sym_backslash    &trans                  &kp KP_MINUS    &kp N4  &kp N5  &kp N6  &kp KP_ASTERISK     &none   
+                &none   &trans  &trans          &trans      &trans            &trans                  &kp KP_SLASH    &kp N7  &kp N8  &kp N9  &kp N0              &none   
                                                 &kp EQUAL   &kp UNDER         &kp KP_MINUS            &trans          &trans  &trans
             >;
         };
@@ -512,10 +400,10 @@
         config_layer {
             display-name = "CONFIG";
             bindings = <
-                &none  &bt BT_SEL 0     &bt BT_SEL 1        &none           &none           &kp GRAVE               &rgb_ug RGB_BRI     &kp KP_NUM          &none   &none       &kp LEFT_BRACKET    &none  
-                &none  &bt BT_SEL 0     &kp MINUS           &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4            &rgb_ug RGB_BRD     &kp PRINTSCREEN     &none   &kp SEMI    &kp SINGLE_QUOTE    &none  
+                &none  &bt BT_SEL 0     &bt BT_SEL 1        &bt BT_SEL 2    &bt BT_SEL 3    &kp GRAVE               &rgb_ug RGB_BRI     &kp KP_NUM          &none   &none       &kp LEFT_BRACKET    &none  
+                &none  &none            &kp MINUS           &none           &none           &none                   &rgb_ug RGB_BRD     &kp PRINTSCREEN     &none   &kp SEMI    &kp SINGLE_QUOTE    &none  
                 &none  &bt BT_CLR       &rgb_ug RGB_TOG     &sys_reset      &bootloader     &studio_unlock          &rgb_ug RGB_EFF     &kp RIGHT_BRACKET   &trans  &trans      &tog 5              &none  
-                                                            &trans          &trans          &trans                  &trans              &trans              &trans       
+                                                            &trans          &kp K_UNDO      &kp K_REDO              &trans              &trans              &trans       
             >;
         };
 
